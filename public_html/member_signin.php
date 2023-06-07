@@ -64,7 +64,6 @@ $user_application = '20230513191528';
             <div class="col-xs-8 offset-xs-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4" style="background-color:whitesmoke;border-radius:5px;">
                 <div class="row mt-4">
                     <div class="col-md-12 text-center">
-                        <!-- <img id="id4imglogo" src="" alt="applicaion's logo" width="175px"> -->
                         <img id="id4imglogo" src="./imgs/logos/logo_apks.svg" alt="applicaion's logo" width="175px">
                     </div>
                 </div>
