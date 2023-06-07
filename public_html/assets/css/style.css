@@ -188,7 +188,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: rgba(128, 128, 128, 0.301);
+  background: rgba(128, 128, 128, 0.8);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   border-radius: 5px;
   transition: 0.3s;

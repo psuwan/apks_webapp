@@ -34,7 +34,7 @@ $user_application = '20230513191528';
 
         #grad1 {
             height: 200px;
-            background-image: linear-gradient(to right, rgba(50, 10, 10, 1), rgba(10, 50, 10, 1));
+            background-image: linear-gradient(to right, rgba(10, 50, 10, 1), rgba(50, 10, 10, 1));
         }
 
         label {
