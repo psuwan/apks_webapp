@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Gold Rubber</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+    <link href="./imgs/logos/lasel_icon_02.svg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Datatables.net -->
+    <!-- <link rel="stylesheet" href="https//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css">
+
+    <!-- Select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <style>
+        .select2-selection__rendered {
+            line-height: 34px !important;
+        }
+
+        .select2-container .select2-selection--single {
+            height: 39px !important;
+        }
+
+        .select2-selection__arrow {
+            height: 34px !important;
+        }
+
+        .mobile-nav-toggle {
+            color: #7cb0d7 !important;
+        }
+
+        .dt-button,
+        .paginate_button {
+            height: 30px !important;
+            padding: 0.25em 1em !important;
+            border-radius: 5px !important;
+        }
+
+        .dataTables_length select,
+        .dataTables_filter input {
+            height: 30px !important;
+        }
+
+        breadcrumbs,
+        .inner-page {
+            padding: 10px 0px !important;
+        }
+
+        #load {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 9999;
+            /* background: url("https://my.lawsociety.com.au/mylsportal/images/loader.gif") no-repeat center center rgba(0, 0, 0, 0.1) */
+            background: url("imgs/generals/loading-eclipse.gif") no-repeat center center rgba(0, 0, 0, 0.1)
+        }
+
+        /* datalist as select2 */
+        /* Style the input field */
+        #myInput {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style the datalist dropdown */
+        #myInput::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+
+        #myInput::-webkit-datetime-edit-text {
+            display: none;
+        }
+
+        #myInput::-webkit-datetime-edit-fields-wrapper {
+            display: none;
+        }
+
+        #myInput::-webkit-inner-spin-button {
+            display: none;
+        }
+
+        #myInput::-webkit-clear-button {
+            display: none;
+        }
+
+        #myInput::-ms-clear {
+            display: none;
+        }
+
+        /* Style the datalist options */
+        #myList option {
+            padding: 8px;
+        }
+
+        .fixed-column {
+            width: 25px;
+        }
+    </style>
+
+    <!-- =======================================================
+  * Template Name: Lumia
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <!-- Loading -->
+    <div id="load"></div>
+    <!-- Loading -->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+
+            <div class="logo me-auto scrollto">
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                <span style="font-size: 22px;color:#61C0BF;">
+                    <a href="./?page=home"><img src="./imgs/logos/logoSm.png" alt="" class="img-fluid"></a>
+                    <!-- <h1><a href="./?page=home">Lasel</a></h1> -->
+                    <a href="./?page=home" class="d-none d-sm-inline">Gold Rubber</a>
+                </span>
+            </div>
+
+            <!-- Navbar for guest -->
+            <?php if (empty($_SESSION['user_signin_role'])) : ?>
+                <nav id="navbar" class="navbar order-last order-lg-0">
+                    <ul>
+                        <!-- <li><a class="nav-link scrollto" href="?page=home">Home</a></li> -->
+                        <!-- <li><a class="nav-link scrollto" href="?page=dashboard">Dashboard</a></li> -->
+                        <!-- <li class="dropdown"><a href="?page=weigh"><span>Weighing</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="?page=weigh&action=view">View</a></li>
+                                <li><a href="?page=weigh&action=weighing">Weighing</a></li>
+                            </ul>
+                        </li> -->
+
+                        <li class="dropdown"><a href="#"><span>Members</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="./user_signup.php">Sign-Up</a></li>
+                                <li><a href="./user_signin.php">Sign-In</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav><!-- .navbar -->
+            <?php endif; ?>
+
+            <!-- Navbar for Staff -->
+            <?php if (!empty($_SESSION['user_signin_role'])) : ?>
+                <?php include_once $config['PATH2_MODEL'] . 'menu.php'; ?>
+            <?php endif; ?>
+
+            <!-- <div class="header-social-links d-flex align-items-center">
+                <a href="https://www.twitter.com/@laselmineral" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=100092237184824" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/laselminerallink/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+
+                <a href="skype:laselminerallink?chat" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="https://www.linkedin.com/in/lasel-mineral-b4bb91275" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div> -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <?php
+    if ($page == 'home') :
+    ?>
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="container text-center text-md-left" data-aos="fade-up">
+                <h1>Welcome to Gold Rubber.</h1>
+            </div>
+        </section><!-- End Hero -->
+    <?php
+    endif;
+    ?>
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <?php
+        if ($page != 'home') :
+        ?>
+            <section class="breadcrumbs">
+                <div class="container">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- <h2><?= 'Page: ' . $page; ?></h2> -->
+                        <ol>
+                            <li><a href="?page=home">Home</a></li>
+                            <li><a href="?page=<?= $page; ?>"><?= $page; ?></a></li>
+                            <?php if (!empty($action)) : ?>
+                                <li><?= $action; ?></li>
+                            <?php endif; ?>
+                        </ol>
+                    </div>
+
+                </div>
+            </section>
+        <?php
+        endif;
+        ?><!-- End Breadcrumbs -->
+
+        <section class="inner-page">
+            <div class="container">
+                <p>
+                    <?php include_once $main_content; ?>
+                </p>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Gold Rubber</h3>
+                        <p>
+                            <br />
+                            <br />
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <!-- <strong>Email:</strong> <a href="mailto:info@laselminerallink.com">info@laselminerallink.com</a><br> -->
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <!-- <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="?page=home">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="?page=home#ceomessage">CEO Message</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="?page=home#vision">Vision</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="?page=home#services">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="?page=home#milestones">Milestones</a></li>
+                        </ul> -->
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <!-- <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Mineral Exploration and Mining Consultation</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Mineral Sourcing & Supply Chain Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Inventory Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Mineral processing technology</a></li>
+                        </ul> -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <!-- <h4>Join Our Newsletter</h4>
+                        <p>Join our company newsletter for exclusive updates and insights.</p>
+                        <form action="ajaxroot.php" method="post">
+                            <input type="hidden" name="process_name" value="maillist_subscribed">
+                            <input type="email" name="maillist_email"><input type="submit" value="Subscribe">
+                        </form> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Lumia</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/lumia-bootstrap-business-template/ -->
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+                <div class="credits">
+                    Used by <a href="mailto:psuwan@yahoo.com">Pattanapong Suwan</a>
+                </div>
+            </div>
+            <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div> -->
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- fileupload -->
+    <script src="files_upload.js"></script>
+
+    <!-- Loading gif -->
+    <script>
+        document.onreadystatechange = function() {
+            let state = document.readyState
+            if (state == 'complete') {
+                document.getElementById('interactive');
+                document.getElementById('load').style.visibility = "hidden";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
