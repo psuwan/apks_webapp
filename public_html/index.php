@@ -23,6 +23,5 @@ $main_content = $_404;
 if (file_exists($view)) {
     $main_content = $view;
 }
-// include_once $config['PATH2_MODEL'].'menu.php';
-// $menu = menu_for($_SESSION[''])
+
 include_once $config['PATH2_VIEW'] . 'layout.phtml';
