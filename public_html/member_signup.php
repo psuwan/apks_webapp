@@ -54,18 +54,19 @@ $user_application = '20230513191528';
 <body id="grad1">
 
     <div class="container">
-        <div class="row mt-5 gx-5 justify-content-center">
-            <div class="col-md-4 col-10" style="background-color:whitesmoke;border-radius:5px;">
+        <div class="row mt-5">
+            <div class="col-xs-8 offset-xs-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4" style="background-color:whitesmoke;border-radius:5px;">
+                <!-- <div class="col-md-4 col-10" style="background-color:whitesmoke;border-radius:5px;"> -->
                 <!-- <div class="col-xs-8 offset-xs-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4" style="background-color:whitesmoke;border-radius:5px;"> -->
                 <div class="row mt-4">
                     <div class="col-md-12 text-center">
-                        <img id="id4imglogo" src="./imgs/logos/logoSq.png" alt="applicaion's logo" width="175px">
+                        <img id="id4imglogo" src="./imgs/logos/logo_apks.svg" alt="applicaion's logo" width="175px">
                     </div>
                 </div>
                 <!-- <hr> -->
                 <div class="row mt-3">
                     <div class="col-md-12 text-center">
-                        Sign-Up&nbsp;[<a href="./user_signin.php">Sign-In</a>]
+                        Sign-Up&nbsp;[<a href="./member_signin.php">Sign-In</a>]
                     </div>
                 </div>
                 <form action="ajaxroot.php" method="post" id="id4form_registration">

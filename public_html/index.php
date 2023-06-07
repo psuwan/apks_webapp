@@ -24,4 +24,5 @@ if (file_exists($view)) {
     $main_content = $view;
 }
 
+// layout for guest
 include_once $config['PATH2_VIEW'] . 'layout.phtml';

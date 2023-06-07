@@ -65,13 +65,13 @@ $user_application = '20230513191528';
                 <div class="row mt-4">
                     <div class="col-md-12 text-center">
                         <!-- <img id="id4imglogo" src="" alt="applicaion's logo" width="175px"> -->
-                        <img id="id4imglogo" src="./imgs/logos/logoSq.png" alt="applicaion's logo" width="175px">
+                        <img id="id4imglogo" src="./imgs/logos/logo_apks.svg" alt="applicaion's logo" width="175px">
                     </div>
                 </div>
                 <!-- <hr> -->
                 <div class="row mt-3">
                     <div class="col-md-12 text-center">
-                        Sign-In&nbsp;[<a href="./user_signup.php">Sign-Up</a>]
+                        Sign-In&nbsp;[<a href="./member_signup.php">Sign-Up</a>]
                     </div>
                 </div>
                 <form action="ajaxroot.php" method="post">
