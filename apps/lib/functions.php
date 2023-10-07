@@ -4,9 +4,9 @@
 date_default_timezone_set('Asia/Bangkok');
 
 define('db_host', 'localhost');
-define('db_user', 'apkssoft_grubber');
+define('db_user', 'root');
 define('db_pass', '@dmin1234S');
-define('db_name', 'apkssoft_grubber');
+define('db_name', 'db_dsbd4iot');
 define('db_char', 'utf8mb4');
 
 // Connected to database
